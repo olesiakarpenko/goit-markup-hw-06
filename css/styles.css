@@ -489,6 +489,7 @@ a {
     color: var(--hero-text-color);
     margin-top: 0;
     margin-bottom: 16px;
+    font-weight: 400;
 }
 .ftr-icons-list {
     display: flex;
@@ -535,14 +536,30 @@ a {
     color: var(--hero-text-color);
     margin-bottom: 16px;
 }
+.ftr-form-input {
+    padding-left: 16px;
+
+    width: 264px;
+    height: 40px;
+
+    background-color: var(--secondary-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
 .ftr-btn{
-    
+    display: flex;
     margin: 0;
     padding: 8px 24px;
+    box-sizing: border-box;
+    
+    justify-content: center;
     text-align: center;
-    letter-spacing: 0.04em;
     align-items: center;
 
+    width: 165px;
+    height: 40px;
+
+    letter-spacing: 0.04em;
     color: var(--hero-text-color);
     background-color: var(--accent-color);
 
@@ -550,7 +567,13 @@ a {
     border-radius: 4px;
 
     cursor: pointer;
-
+}
+.ftr-btn-text {
+    margin-right: 16px;
+}
+.ftr-btn-icon {
+    width: 24px;
+    height: 20px;
 }
 
 /* ================================= */
