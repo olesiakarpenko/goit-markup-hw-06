@@ -370,8 +370,8 @@
                 <h4 class="ftr-form-title">Subscribe</h4>
                 <form class="ftr-form">
                     <div class="ftr-form-field">
-                        <label for="email"></label>
-                        <input class="ftr-form-input" type="email" name="email" id="email" placeholder="E-mail">
+                        <label for="ftr-email"></label>
+                        <input class="ftr-form-input" type="email" name="email" id="ftr-email" placeholder="E-mail">
                     </div>
                     <button class="ftr-btn" type="submit">
                         <span class="ftr-btn-text">Subscribe</span>
@@ -381,7 +381,7 @@
                     </button>
                 </form>
             </div>
-            
+
         </div>
     </footer>
 
@@ -395,23 +395,47 @@
                 </svg>
             </button>
 
-            <form action="">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
+            <h4 class="modal-form-title">Leave your contacts and we will call you back</h4>
 
-                <label for="tel">Phone</label>
-                <input type="tel" name="tel" id="tel">
+            <form class="modal-form" autocomplete="off">
+                <div class="modal-form-field">
+                    <label class="field-label" for="name">Name</label>
+                    <input class="field-input" type="text" name="name" id="name">
+                    <svg class="field-icon">
+                        <use href="./images/icons.svg#person"></use>
+                    </svg>
+                </div>
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <div class="modal-form-field">
+                    <label class="field-label" for="tel">Phone</label>
+                    <input class="field-input" type="tel" name="tel" id="tel">
+                    <svg class="field-icon">
+                        <use href="./images/icons.svg#phone"></use>
+                    </svg>
+                </div>
 
-                <label for="comment">Comment</label>
-                <textarea name="comment" id="comment"  rows="10"></textarea>
+                <div class="modal-form-field">
+                    <label class="field-label" for="email">Email</label>
+                    <input class="field-input" type="email" name="email" id="email">
+                    <svg class="field-icon">
+                        <use href="./images/icons.svg#email"></use>
+                    </svg>
+                </div>
 
-                <input type="checkbox" name="privacy-policy" value="privacy-policy" id="privacy-policy">
-                <label for="privacy-policy">I accept the terms and conditions of the Privacy Policy</label>
+                <div class="modal-form-field">
+                    <label class="field-label" for="comment">Comment</label>
+                    <textarea class="field-input" name="comment" id="comment" rows="10" placeholder="Text input"></textarea>
+                </div>
 
-                <button type="submit">Send</button>
+                <div class="modal-checkbox">
+                    <input class="modal-checkbox-input" type="checkbox" name="privacy-policy" value="privacy-policy" id="privacy-policy">
+                    <label class="modal-checkbox-agreement" for="privacy-policy">I accept the terms and conditions of the 
+                        <a class="checkbox-agreement-link link" href="">Privacy Policy</a></label>
+                </div>
+
+                <div class="modal-send-field">
+                    <button class="modal-send-btn" type="submit">Send</button>
+                </div>
             </form>
         </div>
     </div>

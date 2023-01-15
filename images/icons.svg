@@ -75,7 +75,7 @@
 
 <svg id="modal-close" xmlns="http://www.w3.org/2000/svg" width="8" height="8"><g clip-path="url(#a)"><path d="M8 .806 7.194 0 4 3.194.806 0 0 .806 3.194 4 0 7.194.806 8 4 4.806 7.194 8 8 7.194 4.806 4 8 .806Z"/></g><defs><clipPath id="a"><path d="M0 0h8v8H0z"/></clipPath></defs></svg>
 
-
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" fill="none"><path fill="#F4F4FD" d="M8.446.255A.917.917 0 0 1 10 .901a.928.928 0 0 1-.242.649L4.864 7.704a.92.92 0 0 1-1.019.229.92.92 0 0 1-.306-.204L.293 4.466a.925.925 0 0 1-.226-1.024.925.925 0 0 1 .87-.578.916.916 0 0 1 .656.294L4.162 5.74 8.422.282a.329.329 0 0 1 .025-.027h-.001Z"/></svg>
 
 </defs>
 </svg>
