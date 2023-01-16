@@ -542,6 +542,7 @@ a {
     width: 264px;
     height: 40px;
 
+    color: var(--footer-logo-color);
     background-color: var(--secondary-bg-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -763,7 +764,7 @@ a {
     
 
     width: 408px;
-    height: 576px;
+    /* height: 584px; */
 
     background-color: var(--modal-bg-colort);
     box-shadow:
@@ -790,6 +791,7 @@ a {
     background-color: var(--footer-text-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    cursor: pointer;
 
     transition: fill var(--transition-dur-and-func), 
     background-color var(--transition-dur-and-func);
@@ -846,8 +848,16 @@ a {
     color: rgba(117, 117, 117, 0.5);
 }
 
+.modal-form-field:not(:last-child) {
+    margin-bottom: 8px;
+}
+
 .field-label {
     margin-bottom: 4px;
+}
+
+.field-input-block {
+    position: relative;
 }
 
 .field-input {
@@ -865,29 +875,34 @@ a {
     transition: border-color var(--transition-dur-and-func);
 }
 
-.field-input:not(:last-child) {
-    margin-bottom: 8px;
-
-}
-
-.field-input:focus,
-.field-input:hover {
+.field-input:focus {
     border: 1px solid var(--accent-color);
 }
 
-.field-input:focus + .field-icon,
-.field-input:hover + .field-icon {
+.field-input:focus + .field-icon {
     fill: var(--accent-color);
+}
+
+.field-input-block > .name {
+    width: 18px;
+    height: 18px;
+}
+
+.field-input-block > .tel {
+    width: 18px;
+    height: 24px;
+}
+
+.field-input-block > .email {
+    width: 18px;
+    height: 24px;
 }
 
 .field-icon {
     position: absolute;
     top: 50%;
     left: 16px;
-    transform: translateY(-25%);
-
-    width: 18px;
-    height: 18px;
+    transform: translateY(-50%);
 
     fill: var(--secondary-bg-color);
     border: transparent;
@@ -898,10 +913,10 @@ a {
 /* Modal checkbox */
 
 .modal-checkbox {
-    margin-bottom: 24px;
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-bottom: 24px;
 }
 
 .modal-checkbox-input {
@@ -913,6 +928,7 @@ a {
     border: 1.25px solid var(--secondary-bg-color);
     border-radius: 2px;
     background-size: 0px;
+    cursor: pointer;
 
     transition: all var(--transition-dur-and-func);
 }
@@ -938,6 +954,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 24px;
 }
 
 .modal-send-btn {
